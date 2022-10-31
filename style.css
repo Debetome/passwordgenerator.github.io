@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #30E8BF 0%, #FF8235 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5rem;
+    margin: 6rem;
+    border-radius: 1rem;
+    width: 80%;
+    height: 90%;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+header {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.password-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin: 1rem auto;
+    width: 100%;
+    height: 40%;
+    border-radius: .5rem;
+}
+
+.password-content .password-inputs {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.password-content input {
+    padding: 1rem;
+    min-width: 90%;
+    margin: auto .5rem; 
+    border-radius: .3rem;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.password-content button {
+    background: linear-gradient(to right, #30E8BF 20%, #FF8235 90%);
+    padding: 1rem;
+    margin: auto .5rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: all ease .3s;
+}
+
+.password-content button:hover {
+    border: 1px solid #610beb;
+}
+
+.input-field {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-field .check-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.input-field .check-boxes header {
+    margin-right: auto;
+}
+
+.input-field .check-boxes .check-options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.input-field .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.input-field .buttons header {
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.input-field .buttons .length-field input {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.input-field .buttons .btn-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1.3rem auto;
+}
+
+.input-field .buttons .btn-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-width: 50%;
+    height: 70%;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    transition: all ease .3s;
+}
+
+.input-field .buttons .btn-actions #generate {
+    background: linear-gradient(to right, #30E8BF 0%, #FF8235 100%);
+    margin-right: .5rem;
+}
+
+.input-field .buttons .btn-actions #generate:hover {
+    border: 1px solid #610beb;
+}
+
+.input-field .buttons .btn-actions #clear {
+    background: linear-gradient(to right, #d31f1f 0%, #f7453f 100%);
+    color: #ccc;
+    margin-left: .5rem;
+}
+
+.input-field .buttons .btn-actions #clear:hover {
+    border: 1px solid #610beb;
+}
+
+.input-field .buttons .length-field input {
+    padding: .5rem;
+    border-radius: .3rem;
+    height: 50%;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all ease .3s;
+}
+
+.input-field .buttons .length-field input:focus {
+    border: 1px solid #610beb;
+}

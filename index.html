@@ -1,0 +1,57 @@
+<html lang="en_US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8"/>
+	<title>Password generator</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css"/>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<main>
+		<h2>Password generator</h2>
+		<div class="password-content">
+			<header>Password content</header>
+			<div class="password-inputs">
+				<input id="password-field" type="text" placeholder="Password content" readonly>
+				<button id="copy-password"><i class="fa-solid fa-copy"></i></button>
+			</div>
+		</div>
+		<div class="input-field">
+			<div class="check-boxes">
+				<header>Chars</header>
+				<div class="check-options">
+					<div id="lowercase" class="check-option">
+						<input type="checkbox" name="lowercase" value=""/>
+						<label for="lowercase">abcdefghijklmnñopqrstuvwxyz</label>
+					</div>
+					<div id="uppercase" class="check-option">
+						<input type="checkbox" name="uppercase" value=""/>
+						<label for="uppercase">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</label>
+					</div>
+					<div id="digits" class="check-option">
+						<input type="checkbox" name="digits" value=""/>
+						<label for="digits">1234567890</label>
+					</div>
+					<div id="special" class="check-option">
+						<input type="checkbox" name="special" value=""/>
+						<label for="special">!"#$%&/()=?¿¡|@·~€¬[]{}+-*¨-_.,:;^</label>
+					</div>
+				</div>
+			</div>
+			<div class="buttons">
+				<header>Actions</header>
+				<div class="length-field">
+					<label>Length</label>
+					<input type="number" placeholder="Password length"/>
+				</div>
+				<div class="btn-actions">
+					<button id="generate">Generate</button>
+					<button id="clear">Clear</button>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
