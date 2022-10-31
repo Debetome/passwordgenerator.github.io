@@ -39,6 +39,10 @@ header {
     font-weight: 600;
 }
 
+button:active {
+    filter: brightness(60%);
+}
+
 .password-content {
     display: flex;
     flex-direction: column;
@@ -124,6 +128,7 @@ header {
     border: 1px solid #ccc;
     padding: 2rem;
     border-radius: .5rem;
+    overflow: hidden;
 }
 
 .input-field .buttons header {
@@ -154,6 +159,11 @@ header {
     border: 1px solid #ccc;
     border-radius: .3rem;
     transition: all ease .3s;
+}
+
+.input-field .buttons .btn-actions button i {
+    font-size: 1rem;
+    margin-right: .8rem;
 }
 
 .input-field .buttons .btn-actions #generate {
